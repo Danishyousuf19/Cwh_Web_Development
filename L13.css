@@ -1,0 +1,20 @@
+/* syntax for css */
+body {
+    color: blue;
+}
+
+p {
+    color: rgb(255, 162, 70);
+}
+
+h3,
+p {
+    color: aqua;
+    background-color: blanchedalmond;
+}
+
+h2#headId {
+    border-radius: 22px;
+    background-color: blue;
+    color: rgb(240, 35, 35);
+}
