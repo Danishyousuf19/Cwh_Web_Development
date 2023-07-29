@@ -1,0 +1,26 @@
+/* CSS Selector */
+/* element selector */
+p{
+    color:green;
+    border: 3px solid rgb(233, 163, 155);
+    border-radius: 8px;
+}
+/* id selector */
+p#no_id{
+    color: blue;
+}
+#no_id{
+    color:rgb(255, 78, 8);
+}
+/* class selector */
+.no_class{
+    color: darkorchid;
+}
+.yes_class{
+    background-color: rgb(255, 255, 19);
+}
+/* group selector */
+footer, span{
+    /* background-color: aqua; */
+    color: magenta;
+}
