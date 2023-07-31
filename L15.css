@@ -15,6 +15,7 @@ p#no_id{
 /* class selector */
 .no_class{
     color: darkorchid;
+    font-style: italic;
 }
 .yes_class{
     background-color: rgb(255, 255, 19);
