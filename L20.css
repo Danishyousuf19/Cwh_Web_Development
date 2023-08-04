@@ -1,0 +1,23 @@
+#fir{
+  /* border: 2px solid skyblue; */
+  
+}
+body{
+    background-color:rgb(0, 147, 252);
+}
+.container{
+    height: 100px;
+   background-color: #ffe6c8;
+    border: 5 px solid rgb(120 221 255);
+    /* padding-left: 10px; */
+    /* padding:top right bottom left */
+    padding: 0px 11px 13px 230px;
+    /* padding top/botton left/rigth same */
+    /* padding :12px 14px; */
+    margin-top: 4px;
+    border-top-right-radius:46px ;
+    border-bottom-left-radius: 46px;
+    border-style: dotted;
+    box-sizing: border-box;
+    font-family: 'handjet', Courier, monospace;
+}

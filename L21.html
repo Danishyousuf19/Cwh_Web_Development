@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet">
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    .container {
+        background-color: beige;
+        width: 900px;
+        border: 3px solid orchid;
+        margin: 33px auto;
+        font-family: 'Ubuntu' 'Inconsolata';
+    }
+
+    .item {
+        border: 3px solid rgb(103, 90, 90);
+        margin: 12px 3px;
+        padding: 12px 3px;
+        background-color: cadetblue;
+    }
+
+    #fruit {
+        float: left;
+        width: 48%;
+    }
+    #computer {
+        float: right;
+        width: 48%;
+    }
+    #pens{
+        /* float: left; */
+        width: 100%;
+        clear:both;
+    }
+    p,h3  {
+text-align: center;
+text-align: right;
+text-align: justify;
+    }
+    h2{
+        margin: auto;
+        width:133px
+    }
+</style>
+</head>
+
+<body>
+   
+    <div class="container">
+        <h2 style="margin-bottom: 4px;">float_clear.etc</h2>
+        <div class="item" id="fruit">
+            <h3>FRUITS</h3>
+            <p id="fruitPara" class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti tempore id, dolor, nulla nemo quae repellat, error iure labore quisquam aperiam eius molestiae cupiditate minus veniam accusantium ipsa fugit. Officiis Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sunt deserunt amet vel modi laborum itaque ducimus dolorem ab, molestiae vero at voluptas ex nemo doloremque pariatur. Neque eaque maxime quia perspiciatis cupiditate?
+            </p>
+        </div>
+
+
+        <div class="item" id="computer">
+            <h3>computerS</h3>
+            <p id="compPara" class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti tempore id, dolor, nulla nemo quae repellat, error iure labore quisquam aperiam eius molestiae cupiditate minus veniam accusantium ipsa fugit. Officiis Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sunt deserunt amet vel modi laborum itaque ducimus dolorem ab, molestiae vero at voluptas ex nemo doloremque pariatur. Neque eaque maxime quia perspiciatis cupiditate?
+            </p>
+        </div>
+
+
+        <div class="item" id="pens">
+            <h3>pens</h3>
+            <p id="penPara" class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sint rem
+                cupiditate eligendi maiores, commodi, tempore fugit repellendus molestiae eveniet architecto soluta?</p>
+        </div>
+    </div>
+</body>
+
+</html>
