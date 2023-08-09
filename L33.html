@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after PsedoSelectors</title>
+    <style>
+        body {
+            background-color: black;
+            color: aliceblue;
+            margin: 0px;
+            padding: 0px;
+            /* background-image: url('bg.jpg'); */
+
+
+        }
+
+        section {
+            height: 344px;
+            /* border: 2px solid red; */
+            display: flex;
+            flex-direction: column;
+            margin: 3px 66px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        li {
+            list-style: none;
+            padding: 20px 23px;
+        }
+
+        /* header{
+            display: flex;
+            flex-direction: column;
+        } */
+        .navi {
+            display: flex;
+            font-size: 20px;
+
+        }
+
+        .nb {}
+
+        h3 {
+            font-size: 4rem;
+            font-family: cursive;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        header::before {
+            content: "";
+            background: url('bg.jpg');
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            opacity: .4;
+        }
+
+        section::before {
+            content: "this is content";
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="nb">
+            <ul class="navi">
+                <li class="item">home</li>
+                <li class="item">about us</li>
+                <li class="item">service</li>
+                <li class="item">contact us</li>
+            </ul>
+        </nav>
+
+
+    </header>
+    <section>
+        <h3>Wellcome to coding world</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi, atque. Laborum, ab atque adipisci
+            accusantium perferendis magni sed reiciendis consequatur cum eum! Hic id reiciendis, aperiam dolore
+            quibusdam voluptates explicabo? Porro vitae doloremque magnam?</p>
+    </section>
+    <!-- <hr> -->
+</body>
+
+</html>

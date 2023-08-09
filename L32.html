@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute and nth child psedoselectr </title>
+    <style>
+        .cont{
+            display: block;
+            margin: auto;
+            width: 333px;
+            border: 2px solid forestgreen;
+            padding: 33px;
+        }
+       a[target]{
+            background-color: aquamarine;
+            border: 2px solid firebrick;
+            margin: 33px;
+        }
+        input[type ='text']{
+            background-color: aqua;
+            border: 2px solid rgb(217, 113, 113);
+            margin: 33px;
+        }
+        ul :nth-child(4){
+            background-color: rebeccapurple;
+            border: 2px solid rgb(90, 0, 0);
+            margin: 33px;
+        }
+        ul :nth-child(2n+0){
+            background-color: rgb(210, 165, 255);
+            border: 9px solid rgb(90, 0, 0);
+            margin: 7px;
+        }ul :nth-child(odd){
+            background-color: rgb(51, 153, 83);
+            border: 2px solid rgb(90, 75, 0);
+            margin: 33px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cont">
+    <h1>this is nth child and attributes</h1>
+    <h1>
+        <a href="#" target="_blank">gor to </a>
+        <a href="#" target="_parent">efwe</a>
+    </h1>
+    <form class="fo" action="">
+<input type="text" placeholder="sdf">
+<input type="email" placeholder="sedwedf">
+<input type="text" placeholder="ssddf">
+<input type="password" placeholder="sd333f">
+    </form>
+    <ul>
+        <li class="it" id="tt1">werw</li>
+        <li class="it" id="tt2">wer</li>
+        <li class="it" id="tt3">jhu</li>
+        <li class="it" id="tt4">dsv</li>
+    </ul>
+</div>
+</body>
+</html>

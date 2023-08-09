@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        .box{
+            background-color: blue;
+            color : red;
+            font-size: 72px;
+            text-align: center;
+            display: none;
+        }
+        @media (max-width:300px) {
+            #i1{
+                display: block;
+                background-color: rgb(183, 15, 255);
+            }
+        }
+        @media (max-width:500px) and (min-width:300px) {
+            #i2{
+                display: block;
+                background-color: rgb(0, 255, 0);
+            }
+        }
+        @media (max-width:800px) and (min-width:500px) {
+            #i3{
+                display: block;
+                background-color: rgb(0, 208, 255);
+            }
+        }
+        @media  (min-width:800px) {
+            #i4{
+                display: block;
+                background-color: rgb(255, 227, 17);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="i1">one  Lorem, ipsum dolor</div>
+    <div class="box" id="i2">two Lorem, ipsum dolor</div>
+    <div class="box" id="i3">three Lorem, ipsum dolor</div>
+    <div class="box" id="i4">four Lorem, ipsum dolor</div>
+</body>
+</html>
