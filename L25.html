@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning</title>
+    <style>
+        .cont{
+            border :3px solid green;
+            height: 3000px;
+            width: 3000px;
+            background-color:rgb(255, 248, 239);
+        }
+        .box {
+            border: 2px solid red;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+            display: inline-block;
+
+        }
+
+        /* #box3 {
+            position: relative;
+            top: 26px;
+            left: 25px;
+        } */
+        /* #box3 {
+            position:absolute;
+            top: 46px;
+            left: 45px;
+        } */
+        #box3 {
+            position: sticky;
+           top:6px;
+            left: 25px;
+        }
+        /* #box3 {
+            position: fixed;
+           right:22px;
+           bottom: 24px;
+        } */
+        
+    </style>
+</head>
+
+<body>
+    <div class="cont">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3"style="font-size:44px ;padding:6px">Chat with us</div>
+        <div class="box" id="box4">4</div>
+    </div>
+
+</body>
+
+</html>
