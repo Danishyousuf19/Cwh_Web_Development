@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key frames and animations</title>
+    <style>
+        .cont{
+            /* display: flex; */
+            background-color: aqua;
+            /* width: 100%; */
+        }
+        .box{
+            padding-top: 30px;
+            padding-left: 20px;
+            width: 200px;
+            height: 50px;
+            background-color: rgb(116, 255, 116);
+            position: relative;
+            animation-name: dani1;
+            animation-duration: 6s;
+            animation-iteration-count:1;
+            /* animation-fill-mode: forwards;   */
+            /* animation-timing-function: ease-in; */
+            /* animation-delay:1s; */
+            /* animation-direction: alternate; */
+            animation-name: dani2;
+            /* animation: dani2 3s ease-in 1s 12 forwards; */
+        }
+        @keyframes dani1 {
+            from
+            {
+                width: 200px;
+            }
+            to{
+                width: 98.4%;
+            }
+        }
+        @keyframes dani2 {
+            0%{
+                top:0px;
+                left: 0px;
+            }
+            25%{
+                top:79px;
+                left: 0px;
+            }
+            50%{
+                top:79px;
+                left: 79px;
+            }
+            75%{
+                top:0px;
+                left: 79px;
+            }
+            100%{
+                top: 0px;
+                left: 0px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div class="box">
+            Downloading...
+        </div>
+    </div>
+</body>
+</html>
