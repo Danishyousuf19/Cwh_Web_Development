@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 150px;
+            width: 150px;
+            border: 2px solid darkblue;
+            background-color: rgb(255, 127, 127);
+            /* transition-property: background-color;
+            transition-duration: 3s;
+            transition-timing-function: ease; */
+            transition: background-color 2s ease-in-out;
+            transition: all 2s ease-in-out;
+        }
+
+        #box:hover{
+            background-color: rgb(49, 59, 248);
+        height: 250px;
+        width: 240px;
+        border-radius: 43px;
+        font-size: 26px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>this is l37</h3>
+    <div class="cont">
+        <div id="box">
+            my box
+        </div>
+    </div>
+</body>
+
+</html>
