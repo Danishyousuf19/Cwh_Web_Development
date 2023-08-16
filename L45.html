@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media queries with grid</title>
+    <style>
+        @media only screen and (max-width:300px) {
+            body {
+                background-color: aqua;
+
+                .cont {
+                    grid-template-areas:
+                        'navbar navbar navbar navbar'
+                        'section section section section'
+                        'aside aside aside aside'
+                        'footer footer footer footer';
+                }
+            }
+
+
+
+            aside {
+                display: none;
+            }
+
+            span {
+                display: block;
+                text-align: center;
+            }
+
+        }
+
+        @media only screen and (min-width:300px) and (max-width:500px) {
+            body {
+                background-color: rgb(5, 188, 188);
+
+                .cont {
+                    grid-template-areas:
+                        'navbar navbar navbar navbar'
+                        'section section section section'
+                        'aside aside aside aside'
+                        'footer footer footer footer';
+                }
+            }
+
+            span {
+                display: block;
+                text-align: center;
+            }
+
+
+
+
+        }
+
+        @media (max-width:800px) and (min-width:500px) {
+            body {
+                background-color: rgb(2, 147, 147);
+            }
+        }
+
+        @media (min-width:800px) {
+            body {
+                background-color: rgb(3, 71, 71);
+            }
+        }
+
+        .cont {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section aside'
+                'footer footer footer footer';
+        }
+
+        nav {
+            grid-area: navbar;
+        }
+
+        section {
+            grid-area: section;
+        }
+
+        aside {
+            grid-area: aside;
+        }
+
+        footer {
+
+            grid-area: footer;
+            text-align: center;
+        }
+
+        .bdr {
+            border: 2px solid black;
+            padding: 10px 23px;
+            background-color: wheat;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cont">
+        <nav class="navbar bdr"><span> home</span><span> about us</span><span> services</span> </nav>
+        <section class="bdr">
+            <h2>learn kad </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas consequatur obcaecati velit fugit explicabo quam quidem atque ea id, sapiente voluptatum. Eum inventore facilis quos repellendus beatae. Perspiciatis accusantium reiciendis nihil voluptas dolore?</p>
+        </section>
+        <aside class="bdr">
+            <h1>more about</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae laboriosam nobis totam excepturi esse aut, adipisci praesentium rem laudantium? Minima quaerat reiciendis nemo ipsam itaque. Nisi fugit magni iste, libero molestias veritatis dolore quam dolor rerum ipsa minima nam placeat! A ducimus repudiandae alias.</p>
+        </aside>
+    </div>
+    <footer class="bdr">copyright &copy; danish </footer>
+</body>
+
+</html>
