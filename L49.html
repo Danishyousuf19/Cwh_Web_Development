@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings</title>
+</head>
+<body>
+    <div class="cont">
+        <h1>heading</h1>
+        <div id="hu"></div>
+        <div class="con">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident aspernatur sequi earum, ad nobis a consectetur ipsa, tempore accusantium minus aperiam soluta, saepe numquam. Cumque provident tempore rem sunt asperiores dolores expedita odio!</p>
+        </div>
+    </div>
+    <script>
+        var string ="good";
+        var str ="hi";
+        console.log(str+string);
+        var name="danish";
+        var r="sagam";
+        var temp=` hi my name is ${name} . i am from ${r}`;
+        console.log(temp);
+        var l=name.length;
+        console.log(l)
+        document.getElementById('hu').innerHTML=' <h1>heading</h1>'
+        console.log(temp.indexOf('from'))
+        name=temp.slice(1,14);
+        console.log(name);
+        name =name.substring(1,4);
+        console.log(name);
+        name=name.substr(1,3);
+        console.log(name);
+        var g=temp.replace('da','ee')
+        console.log(g);
+        var f=temp.toUpperCase();
+        console.log(f)
+        temp.concat(temp); 
+        console.log(temp);
+        var c=r.charAt(4);
+        console.log(r);
+
+    </script>
+
+</body>
+</html>
