@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow functions</title>
+</head>
+<body>
+    <div class="c">arrow functions </div>
+    <Script>
+     let   greet=()=>{
+            // confirm("are you adult?")
+            console.log("sdff")
+        }
+        let sum=(a,v)=>a+v;
+        sum(4,6);
+        greet();
+        setTimeout(()=>{console.log("hi")},6000);
+        let obj={
+            names:["dsad","sdasdf","tyhty"],
+            speak(){
+                this.names.forEach((student)=>{
+                    console.log("hi "+student)
+                }) ;
+            }
+        }
+        obj.speak();
+    </Script>
+</body>
+</html>

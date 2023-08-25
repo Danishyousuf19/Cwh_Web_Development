@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listenning events</title>
+    <style>
+        #btn{
+            border: 2px solidgreen;
+            background-color: rgb(0, 0, 0);
+            padding: 10px 13px;
+            color: aliceblue;
+            font-weight: bold;
+            border-radius: 12px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="c">
+        <h2>head</h2>
+        <p id="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam hic minima, cum voluptatibus quisquam rerum esse, inventore ratione debitis magni mollitia dicta assumenda sint! Sapiente in, dicta facilis voluptates beatae quibusdam a itaque repudiandae est nemo ex vitae natus asperiores eveniet laudantium ea fuga blanditiis dolores aliquid ipsa molestiae perferendis qui odio. Deserunt, debitis tempora? Libero a vero, veniam quod perspiciatis incidunt ipsam debitis explicabo commodi sint rerum consequatur enim iste iure cum aliquam minus non harum corrupti blanditiis eos aspernatur ipsum totam voluptates. Dolorem, totam itaque ratione quo ipsam consequatur voluptas, quas natus at illum molestias eos nihil laboriosam eum dicta incidunt modi voluptate, dolor corrupti sed eveniet nam illo. Vel inventore incidunt mollitia quas temporibus, tempora ullam itaque similique, et cum eveniet neque? Doloremque aspernatur aperiam dolor quam, et aut eligendi rem totam eaque, dicta consequuntur modi perspiciatis maiores neque necessitatibus, optio nihil excepturi. Temporibus, reiciendis neque. Voluptatum doloribus exercitationem blanditiis voluptate impedit incidunt dicta commodi, tempora similique autem consequuntur ratione sit nobis deserunt nesciunt asperiores ut! In obcaecati repellendus delectus laboriosam. Adipisci ut ea natus obcaecati repudiandae dignissimos soluta enim! Reprehenderit debitis nihil tenetur quia temporibus dolores accusamus modi perferendis fugit tempore, voluptatibus doloribus labore cupiditate. Aperiam eum veritatis officiis odio maiores magnam! Iure, at debitis quis sequi magni facilis, optio blanditiis ducimus ratione doloribus veritatis a ullam sint! Laboriosam numquam accusantium natus perspiciatis quam nobis voluptatibus inventore temporibus incidunt quasi?</p>
+    </div><button id="btn" onclick="togglehide()">show/hide</button>
+
+    <script>
+             let p=document.getElementById("para");
+             p.addEventListener('mouseover',function run(){
+alert("mouse inside")
+             });
+             p.addEventListener('mouseout',function run(){
+alert("mouse ouside")
+             });
+        function togglehide(){
+            let b=document.getElementById("btn");
+            let p=document.getElementById("para");
+            if(p.style.display!="none"){
+p.style.display="none";}
+else{
+    p.style.display="block";  
+}
+
+        }
+    </script>
+</body>
+</html>

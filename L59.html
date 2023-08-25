@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date and time</title>
+</head>
+<body>
+  <div class="c">
+    this is container
+  </div>  
+  <script>
+    console.log("this is time and date lecture")
+    let now =new Date();
+    console.log(now);
+    let w =new Date(0);
+    console.log(w);
+    let f=new Date("2032-3-12");
+    console.log(f);
+    // let a=new Date(year,month,date,hours,minutes,seconds,milisec);
+    let a=new Date(2023,3,23,13,22,3,44)
+    console.log(a);
+    var yr=a.getFullYear();
+    console.log(yr)
+    yr=a.getDate();
+    console.log(yr)
+    yr=a.getMonth();
+    console.log(yr)
+     yr=a.getHours();
+    console.log(yr)
+    a.setDate(3)
+    console.log(Date.now())
+  </script>
+</body>
+</html>
