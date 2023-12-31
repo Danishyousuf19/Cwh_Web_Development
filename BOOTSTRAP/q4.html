@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Create a page and add Grid to show stock prices data of Apple. -->
+    <title>Apple Stock Prices</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Apple Stock Prices</h1>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="table-responsive"> <!-- Add this div -->
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Open</th>
+                                <th>High</th>
+                                <th>Low</th>
+                                <th>Close</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Repeat this row for each stock price data point -->
+                            <tr>
+                                <td>2023-12-31</td>
+                                <td>150.00</td>
+                                <td>155.00</td>
+                                <td>149.00</td>
+                                <td>154.00</td>
+                            </tr>
+                            <!-- End of repeated row -->
+                        </tbody>
+                    </table>
+                </div> <!-- End of added div -->
+            </div>
+        </div>
+    </div>
+    <!-- Include Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

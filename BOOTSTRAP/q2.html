@@ -1,0 +1,70 @@
+<!--Create a registration page and add fields like name, address, etc. to capture data. Also 
+ add alerts if user is going to close the window. -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Registration Page</title>
+     <!-- Bootstrap CDN links -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ </head>
+ <body>
+     <div class="container">
+         <h1 class="text-center">Registration Page</h1>
+         <form id="registration-form" method="post" action="submit.php">
+             <div class="form-group">
+                 <label for="name">Name</label>
+                 <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+             </div>
+             <div class="form-group">
+                 <label for="address">Address</label>
+                 <input type="text" class="form-control" id="address" name="address" placeholder="Enter your address" required>
+             </div>
+             <div class="form-group">
+                 <label for="email">Email</label>
+                 <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+             </div>
+             <div class="form-group">
+                 <label for="password">Password</label>
+                 <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password" required>
+             </div>
+             <div class="form-group form-check">
+                 <input type="checkbox" class="form-check-input" id="terms" name="terms" required>
+                 <label class="form-check-label" for="terms">I agree to the terms and conditions</label>
+             </div>
+             <button type="submit" class="btn btn-primary">Register</button>
+         </form>
+     </div>
+     <!-- Bootstrap alert for closing window -->
+     <div id="alert" class="alert alert-warning alert-dismissible fade show" role="alert">
+         <strong>Warning!</strong> You are about to close the window without submitting the form. Are you sure you want to do that?
+         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+           <span aria-hidden="true">×</span>
+         </button>
+     </div>
+     <!-- Script to show alert on window close event -->
+     <script>
+         // Get the alert element
+         var alert = document.getElementById("alert");
+         // Hide the alert by default
+         alert.style.display = "none";
+         // Add an event listener for window beforeunload event
+         window.addEventListener("beforeunload", function (e) {
+             // Check if the form is submitted or not
+             var form = document.getElementById("registration-form");
+             
+                 // If not, show the alert
+                 alert.style.display = "block";
+                 // Cancel the default action of closing the window
+                 e.preventDefault();
+                 // Set the return value to a message
+                 e.returnValue = "Are you sure you want to leave?";
+             
+         });
+     </script>
+ </body>
+ </html>
+ 
